@@ -583,6 +583,7 @@ del {
   position: relative;
   background-image: url(./image/banner.png);
   width: 100%;
+  max-width: 1860px;
   min-width: 95%;
   height: 700px;
   left: 0px;
@@ -592,6 +593,8 @@ del {
   justify-content: center;
   display: flex;
   flex-direction: column;
+  background-repeat: no-repeat;
+  margin-left: 20px;
 }
 
 .banner-infor {
@@ -1047,6 +1050,7 @@ footer {
 
   .trending-item {
     flex-basis: calc(25% - 40px);
+    margin-right: 5px;
   }
 
   .image-trending {
@@ -1055,13 +1059,13 @@ footer {
   }
 
   .image-container {
-    position: static;
-    display: block;
-    margin: 0 auto;
+    position: relative;
+    /* display: block; */
+    left: 0px;
   }
 
   .image-text {
-    display: none;
+    position: absolute;
   }
 
   .menu {
